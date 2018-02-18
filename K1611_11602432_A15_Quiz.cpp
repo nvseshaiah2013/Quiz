@@ -5,12 +5,12 @@
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
+using namespace std;
 inline void gotoxy(int x,int y)
 {
     COORD pos = {x,y};
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);
 }
-using namespace std;
  char timer()
 {
     char ansopt='d';
@@ -43,7 +43,7 @@ inline void inst()
     cout<<"5. IMPORTANT : THE OPTIONS ARE (a,b,c) ONLY (THEY ARE CASE SENSITIVE)\n";
     cout<<"--------------------------------------------------------------------------\n";
     cout<<"BEST OF LUCK\n";
-    cout<<"Ready To Go>>>>\nPress Enter to Continue....>>>>>>>>>>\n";
+    cout<<"Ready To Go>>>>\nPress Enter to Continue...>>>>>>>>>>\n";
     getch();system("cls");
     }
 class Quiz
